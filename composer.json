@@ -1,0 +1,22 @@
+{
+    "name": "fedman2010/fsm",
+    "description": "Implementation of Finite State Machine",
+    "type": "library",
+    "autoload": {
+        "psr-4": {
+            "Fedman2010\\Fsm\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Max Davydenko"
+        }
+    ],
+    "license": "MIT",
+    "require": {
+        "php": "^8.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^12"
+    }
+}
