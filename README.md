@@ -57,7 +57,7 @@ $config = [
 Create an instance of the FSM with the configuration:
 
 ```
-use Fedman2010\FSM\FSM;
+use Fedman2010\Fsm\FSM;
 
 $fsm = new FSM($config);
 ```
