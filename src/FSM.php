@@ -4,7 +4,7 @@ namespace Fedman2010\Fsm;
 
 use InvalidArgumentException;
 
-class FSM
+class FSM implements StateMachineInterface
 {
     private $initialState;
     private $currentState;

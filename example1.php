@@ -10,7 +10,6 @@ use Fedman2010\Fsm\FSM;
 
 include __DIR__ . '/vendor/autoload.php';
 
-// FSM configuration; could be put in separate config file and included using require('config.php')
 $config = [
     'initial_state' => 'S0',
     'rules' => [
@@ -49,15 +48,7 @@ $config = [
 
 $obj = new FSM($config);
 
-// example 1
-$str = '110';
-for ($i = 0; $i < strlen($str); $i++) {
-    $state = $obj->transition($str[$i]);
-}
-echo "Final State: " . $obj->getCurrentState() . "\n";
-
-// example 2
-// function to determine mod 3 of a binary string
+// function to determine mod 3 of a binary string using Finite State Machine method
 function modThree(string $input) {
     global $obj;
     $obj->reset();
@@ -76,10 +67,10 @@ function modThree(string $input) {
 }
 
 $str = '1101';
-echo "Modulo 3 of $str: " . modThree($str) . "\n";
+echo "Modulo Three of $str: " . modThree($str) . "\n";
 
 $str = '1110';
-echo "Modulo 3 of $str: " . modThree($str) . "\n";
+echo "Modulo Three of $str: " . modThree($str) . "\n";
 
 $str = '1111';
-echo "Modulo 3 of $str: " . modThree($str) . "\n";
+echo "Modulo Three of $str: " . modThree($str) . "\n";
